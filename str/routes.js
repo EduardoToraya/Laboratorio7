@@ -1,5 +1,5 @@
 const express = require("express")
-const characters = require("./control/chars")
+const characters = require("./control/characters")
 
 const router = express.Router()
 
