@@ -1,5 +1,5 @@
 const express = require('express')
-const personajes = require('./controllers/personajes')
+const personajes = require('./controllers/personajes.js')
 
 
 const router = express.Router()
