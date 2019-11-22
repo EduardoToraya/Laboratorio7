@@ -1,15 +1,15 @@
 const express = require('express')
-const personajes = require('./controllers/personajes.js')
+const persons = require('./controllers/persons.js')
 
 
 const router = express.Router()
 
 
-router.get('/persons', personajes.getPersonajes)
-router.get('/persons/:id', personajes.getPersonaje)
-router.post('/persons', personajes.createPersonaje)
-router.patch('/persons/:id', personajes.updatePersonaje)
-router.delete('/persons/:id', personajes.deletePersonaje)
+router.get('/persons', persons.getPersons)
+router.get('/persons/:id', persons.getPerson)
+router.post('/persons', persons.createPerson)
+router.patch('/persons/:id', persons.updatePerson)
+router.delete('/persons/:id', persons.deletePerson)
 
 
 module.exports = router
